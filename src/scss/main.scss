@@ -1,0 +1,36 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: azure; 
+}
+
+:global(#app) { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+}
+
+$i: 1;
+.title_#{$i} {
+    background-color: green;
+}
+
+$i: 2;
+.title_#{$i} {
+    background-color: blue;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.arrow {
+    color: blue;
+    // background-image: url('../assets/icons/arrow.svg');
+    icon-font: url('../assets/icons/arrow.svg');
+}
